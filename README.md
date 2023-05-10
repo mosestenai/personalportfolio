@@ -1,7 +1,7 @@
 # Description
 A simple portfolio  built with React.
 
-Open [http://mosestenai.me.ke](http://mosestenai.me.ke) to view it in your browser.
+Open [https://mosestenai.me.ke](https://mosestenai.me.ke) to view it in your browser.
 
 # react portfoiio
 
