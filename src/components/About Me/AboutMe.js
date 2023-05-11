@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 
 import classes from './aboutMe.module.css';
-import Photo from '../../components/asset/passport.jpg';
+import Photo from '../../components/asset/pass.jpg';
 import PersonalData from '../../Data/PersonalData';
 import SocialLinks from '../SocialLinks/SocialLinks';
 import Button from "../UI/Button";
@@ -15,7 +15,7 @@ const AboutMe = () => {
         <Fragment>
             <div className={classes.contactMe}>
                 <div className={classes.avatar}>
-                    <img src={Photo} alt="" style={{borderColor:uiColor}} />
+                    <img src={Photo} alt="" style={{borderColor:uiColor,backgroundColor:"black"}} />
                 </div>
                 <div className={classes.contactCard}>
                     <h1 style={{color:uiColor}}>About Me</h1>
