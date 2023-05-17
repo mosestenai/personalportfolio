@@ -14,16 +14,16 @@ const Backdrop = props => {
 
 function ColorModal(props) {
 
-    const mode=useSelector(state=>state.mode);
+    const mode = useSelector(state => state.mode);
     let defaultColors;
     let colorCardBgColor;
     if (mode === 'light') {
         defaultColors = ThemeData.lightBgThemeColors;
-        colorCardBgColor='white';
+        colorCardBgColor = 'white';
     }
     else {
         defaultColors = ThemeData.darkBgThemeColors;
-        colorCardBgColor='black';
+        colorCardBgColor = 'black';
     }
 
     function handleClick(index) {
@@ -31,13 +31,13 @@ function ColorModal(props) {
     }
 
     return (
-        <React.Fragment>
+        <div>
             {createPortal(
                 <Backdrop onClick={props.onConfirm} />,
                 document.getElementById("backdrop")
             )}
             {createPortal(
-                <div className="colorCard" style={{backgroundColor:colorCardBgColor}}>
+                <div className="colorCard" style={{ backgroundColor: colorCardBgColor }}>
                     {defaultColors.map((color, index) =>
                         <div key={index} onClick={() => handleClick(index)} style={{ backgroundColor: color }}></div>
                     )}
@@ -45,7 +45,7 @@ function ColorModal(props) {
                 document.getElementById('overlay')
             )}
 
-        </React.Fragment>
+        </div>
     )
 }
 export default ColorModal;

@@ -1,27 +1,27 @@
 const languagesDone = [
     {
-        name: 'React Native',
-        percentDone: 92
-    },
-    {
-        name: 'React Js',
+        name: 'Project Management',
         percentDone: 80
     },
     {
-        name: 'Next js',
-        percentDone: 80
-    },
-    {
-        name: 'Node Js',
-        percentDone: 80
-    },
-    {
-        name: 'Vanilla PHP',
+        name: 'Fullstack Web Development',
         percentDone: 90
     },
     {
-        name: 'PHP Laravel',
+        name: 'Mobile developer',
         percentDone: 90
+    },
+    {
+        name: 'System Maintance',
+        percentDone: 90
+    },
+    {
+        name: 'System Testing',
+        percentDone: 80
+    },
+    {
+        name: 'Database Admin',
+        percentDone: 80
     },
 
 ]

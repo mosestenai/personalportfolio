@@ -46,9 +46,8 @@
     width: 100%;
 }
 .progressBar label{
-    text-align: center;
     width: 30%;
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 800;
 }
 .progressBar h5{
