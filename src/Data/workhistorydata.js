@@ -15,7 +15,7 @@ export const workhistory = [
         position: "Freelancer",
         description: "Worked as a senior software developer developing Web applications,Mobile apps, Rest api's and other software advancements",
         languagesused: "React js,React Native, Vanilla PHP,Node js, Laravel",
-        links: ["https://theiplug.com", "https://play.google.com/store/apps/details?id=com.theiplug.iplug", "https://play.google.com/store/apps/details?id=com.tuma.tumaapp."]
+        links: ["https://theiplug.com", "https://play.google.com/store/apps/details?id=com.theiplug.iplug","https://play.google.com/store/apps/details?id=com.jido.jidoapp","https://jidoapp.co.ke", "https://play.google.com/store/apps/details?id=com.tuma.tumaapp.","https://dailybibledevotion.org"]
     },
     {
         companyname: "Eazistey Service Link Limited",

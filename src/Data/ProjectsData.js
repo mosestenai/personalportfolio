@@ -142,11 +142,32 @@ const DUMMY_PROJECTS = [
         ]
     },
     {
-        projectTitle: 'Right Route Mobile app',
+        projectTitle: 'Jidoapp',
         description: 'Package delivery route optimization Mobile app built using react native(Laravel API).',
-        sourceLink: '',
+        sourceLink: 'https://play.google.com/store/apps/details?id=com.jido.jidoapp',
         lastUpdated: 'May 06 2023',
         type: "m",
+        imagesarray: [
+            require("./../components/asset/projects/mobile/route.jpg"),
+            require("./../components/asset/projects/mobile/route2.jpg"),
+            require("./../components/asset/projects/mobile/route3.jpg"),
+            require("./../components/asset/projects/mobile/route4.jpg"),
+            require("./../components/asset/projects/mobile/route5.jpg"),
+            require("./../components/asset/projects/mobile/route6.jpg"),
+            require("./../components/asset/projects/mobile/route7.jpg"),
+            require("./../components/asset/projects/mobile/route8.jpg"),
+            require("./../components/asset/projects/mobile/route9.jpg"),
+            require("./../components/asset/projects/mobile/route10.jpg"),
+            require("./../components/asset/projects/mobile/route11.jpg"),
+            require("./../components/asset/projects/mobile/route12.jpg"),
+        ]
+    },
+    {
+        projectTitle: 'Jidoapp website',
+        description: 'Package delivery route optimization Website built using react js.',
+        sourceLink: 'https://jidoapp.co.ke',
+        lastUpdated: 'Aug 06 2023',
+        type: "w",
         imagesarray: [
             require("./../components/asset/projects/mobile/route.jpg"),
             require("./../components/asset/projects/mobile/route2.jpg"),
