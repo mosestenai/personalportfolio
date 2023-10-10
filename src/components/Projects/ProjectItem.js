@@ -2,12 +2,8 @@ import React from "react";
 
 import classes from "./ProjectItem.module.css";
 import Card from "../UI/Card";
-
-import StarIcon from '@mui/icons-material/Star';
-import GitHubIcon from '@mui/icons-material/GitHub';
 import { useSelector } from "react-redux";
 import { Adb, BrowseGallery, Image, LanguageOutlined, PhoneAndroid, Web } from "@mui/icons-material";
-import { Global } from "@emotion/react";
 import { Button } from "@mui/material";
 
 const ProjectItem = ({ project,onshowimages }) => {

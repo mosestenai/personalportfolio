@@ -1,5 +1,21 @@
 const DUMMY_PROJECTS = [
     {
+        projectTitle: 'Maliplus ERP website',
+        description: 'MaliPlus® Enterprise is an integrated stock, purchases, sales and production Management System from PrimeSoft Solutions (K) Ltd.',
+        sourceLink: 'https://maliplus.co.ke',
+        lastUpdated: 'Aug 20 2022',
+        type: "w",
+        imagesarray: [
+            require("./../components/asset/projects/site/maliplus1.png"),
+            require("./../components/asset/projects/site/maliplus2.png"),
+            require("./../components/asset/projects/site/maliplus3.png"),
+            require("./../components/asset/projects/site/maliplus4.png"),
+            require("./../components/asset/projects/site/maliplus5.png"),
+            require("./../components/asset/projects/site/maliplus6.png"),
+            require("./../components/asset/projects/site/maliplus7.png"),
+        ]
+    },
+    {
         projectTitle: 'Property Fronter Website',
         description: 'Is a property finder, properties for sale finder,plots for sale finder and real estate management platform built using React jsa and Next js.',
         sourceLink: 'https://propertyfrontier.co.ke',
@@ -37,7 +53,7 @@ const DUMMY_PROJECTS = [
     {
         projectTitle: 'Eazistey Web application',
         description: 'Eazistey Is a student Accomodation finder, Service link Web application built using react js(php,node js API)',
-        sourceLink: 'https://eaistey.co.ke',
+        sourceLink: 'https://eazistey.co.ke',
         lastUpdated: 'April 10 2023',
         type: "w",
         imagesarray: [
@@ -169,18 +185,25 @@ const DUMMY_PROJECTS = [
         lastUpdated: 'Aug 06 2023',
         type: "w",
         imagesarray: [
-            require("./../components/asset/projects/mobile/route.jpg"),
-            require("./../components/asset/projects/mobile/route2.jpg"),
-            require("./../components/asset/projects/mobile/route3.jpg"),
-            require("./../components/asset/projects/mobile/route4.jpg"),
-            require("./../components/asset/projects/mobile/route5.jpg"),
-            require("./../components/asset/projects/mobile/route6.jpg"),
-            require("./../components/asset/projects/mobile/route7.jpg"),
-            require("./../components/asset/projects/mobile/route8.jpg"),
-            require("./../components/asset/projects/mobile/route9.jpg"),
-            require("./../components/asset/projects/mobile/route10.jpg"),
-            require("./../components/asset/projects/mobile/route11.jpg"),
-            require("./../components/asset/projects/mobile/route12.jpg"),
+            require("./../components/asset/projects/site/jido1.png"),
+            require("./../components/asset/projects/site/jido2.png"),
+            require("./../components/asset/projects/site/jido3.png"),
+            require("./../components/asset/projects/site/jido4.png"),
+        ]
+    },
+    {
+        projectTitle: 'Daily Bible devotion website',
+        description: 'Online bible and devotions site',
+        sourceLink: 'https://dailybibledevotion.org/',
+        lastUpdated: 'Sept 06 2023',
+        type: "w",
+        imagesarray: [
+            require("./../components/asset/projects/site/bible1.png"),
+            require("./../components/asset/projects/site/bible2.png"),
+            require("./../components/asset/projects/site/bible3.png"),
+            require("./../components/asset/projects/site/bible4.png"),
+            require("./../components/asset/projects/site/bible5.png"),
+            require("./../components/asset/projects/site/bible6.png"),
         ]
     },
     {

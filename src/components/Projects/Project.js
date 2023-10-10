@@ -12,6 +12,7 @@ import { useSelector } from "react-redux";
 import { useState } from "react";
 import Mobileimages from "../../Utils/projectsimages";
 import { Container, Modal } from "@mui/material";
+import { Shuffle } from "../../Utils/functions";
 
 const Projects = (props) => {
     const nonThemeColor = useSelector(state => state.nonThemeColor);
@@ -52,7 +53,7 @@ const Projects = (props) => {
             <ProgrammingSkills />
             <h1 className={styles.projectHeading} style={{ color: nonThemeColor }}>Projects</h1>
             <div className={styles.projectList}>
-                {projects.map((item, index) => {
+                {Shuffle(projects).map((item, index) => {
                     return <ProjectItem key={index} onshowimages={onshowimages} project={item} />
                 })}
             </div>

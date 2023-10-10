@@ -3,10 +3,10 @@ export const workhistory = [
         companyname: "Primesoft Solutions",
         logosrc: require("./../components/asset/primesoft.png"),
         year: "2022-2023",
-        position: "Lead Software Developer Property frontier",
-        description: "Developed property frontier web application  and Mobile app and other inhouse apps",
+        position: "Software Developer",
+        description: "Developed various web apps ,Mobile apps and other inhouse apps",
         languagesused: "React js,React Native, Vanilla PHP,Next Js",
-        links: ["https://propertyfrontier.co.ke", "https://play.google.com/store/apps/details?id=com.propertyfrontier.propertyfrontier"]
+        links: ["https://maliplus.co.ke", "https://propertyfrontier.co.ke", "https://play.google.com/store/apps/details?id=com.propertyfrontier.propertyfrontier"]
     },
     {
         companyname: "GRAPH TECHNOLOGIES,NAIROBI, KENYA",
@@ -15,7 +15,7 @@ export const workhistory = [
         position: "Freelancer",
         description: "Worked as a senior software developer developing Web applications,Mobile apps, Rest api's and other software advancements",
         languagesused: "React js,React Native, Vanilla PHP,Node js, Laravel",
-        links: ["https://theiplug.com", "https://play.google.com/store/apps/details?id=com.theiplug.iplug","https://play.google.com/store/apps/details?id=com.jido.jidoapp","https://jidoapp.co.ke", "https://play.google.com/store/apps/details?id=com.tuma.tumaapp.","https://dailybibledevotion.org"]
+        links: ["https://theiplug.com", "https://play.google.com/store/apps/details?id=com.theiplug.iplug", "https://apps.apple.com/us/app/iplug/id6450694735", "https://play.google.com/store/apps/details?id=com.jido.jidoapp", "https://jidoapp.co.ke", "https://apps.apple.com/us/app/jido-app/id6467808028", "https://play.google.com/store/apps/details?id=com.tuma.tumaapp.", "https://dailybibledevotion.org"]
     },
     {
         companyname: "Eazistey Service Link Limited",
