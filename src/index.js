@@ -1,20 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { ThemeProvider } from '@mui/material';
-import { Provider } from 'react-redux';
-import { BrowserRouter } from 'react-router-dom';
-
+import React, { useEffect } from 'react';
+import ReactDOM from 'react-dom/client'
 import App from './App';
-import store from './store/theme';
-import theme from './Utils/theme';
+import { BrowserRouter as Router, useLocation } from "react-router-dom";
+import { Provider } from 'react-redux';
+import store from "./store"
+import "./Utils/styles.css"
+
+// ScrollToTop component
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+};
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Provider store={store}>
-        <BrowserRouter>
-            <ThemeProvider theme={theme}>
-                <App />
-            </ThemeProvider>
-        </BrowserRouter>
-    </Provider>
+  <Provider store={store}>
+    <Router>
+      <ScrollToTop />
+      <div className='mainbody'>
+        <App />
+      </div>
+    </Router>
+  </Provider>
 );

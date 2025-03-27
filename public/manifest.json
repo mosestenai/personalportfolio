@@ -1,6 +1,6 @@
 {
-  "short_name": "Moses Tenai",
-  "name": "Moses Tenai - Software Engineer",
+  "short_name": "Tenai",
+  "name": "Mosestenai",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,17 +9,17 @@
     },
     {
       "src": "favicon.ico",
-      "type": "image/png",
+      "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
       "src": "favicon.ico",
-      "type": "image/png",
+      "type": "image/x-icon",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#0073cf",
   "background_color": "#ffffff"
 }

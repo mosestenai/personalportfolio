@@ -1,43 +1,67 @@
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Navigate, Route, Routes } from "react-router-dom";
+import { useDispatch, useSelector } from 'react-redux';
+import { ThemeProvider } from '@mui/material';
+import { reduxconstants } from './Utils/arrays';
+import Autoalert from "./Components/Autoalert"
+import Autoloading from './Components/Autoloading';
+import { logoutUser, setUser } from './store/user';
+import theme from './Utils/theme';
+import { getFromStore } from './Utils/functions';
+import { CircularProgress, Stack, Typography } from '@mui/material';
+import Usernavigation from './nav';
 
-import { Route, useLocation, Routes, Navigate } from "react-router-dom";
-import './app.css';
-
-//components
-import Navbar from './components/Navbar/Navbar';
-import Home from './components/Home/Home';
-import Footer from './components/Footer/Footer';
-import Education from './components/Education/Education';
-import Certifications from "./components/Certifications/Certifications";
-import Projects from "./components/Projects/Project";
-import AboutMe from "./components/About Me/AboutMe";
-
-import { useSelector } from "react-redux";
 
 const App = () => {
-    const location = useLocation();
-    const theme = useSelector(state => state.theme);
+  const { user } = useSelector((state) => state.user)
+  const dispatch = useDispatch()
+  const [loading, setloading] = useState(true);
+
+  useEffect(() => {
+    updateredux()
+    // dispatch(logoutUser())
+  }, []);
+
+  const updateredux = () => {
+    let user = getFromStore(reduxconstants.USER_PROFILE, true);
+
+    if (user) { dispatch(setUser(user)) }
+
+    setloading(false)
+  }
+
+
+
+  if (loading) {
     return (
-        <div className="App" style={theme}>
-            <Navbar />
-            <div className="app-content">
-                <TransitionGroup>
-                    <CSSTransition timeout={300} classNames='fade' key={location.key}>
-                        <Routes>
-                            <Route path="/" exact element={<Navigate replace to="/home" />} />
-                            <Route path="/home" exact element={<Home  />} />
-                            <Route path="/about-me" exact element={ <AboutMe />} />
-                            <Route path="/education" exact element={ <Education />} />
-                            <Route path="/certifications" exact element={ <Certifications />} />
-                            <Route path="/projects" exact element={ <Projects />} />
-                            <Route path="*" exact element={<Navigate replace to="/home" />} />
-                        </Routes>
-                    </CSSTransition>
-                </TransitionGroup>
-            </div>
-            <Footer />
-        </div>
+      <Stack
+        height={"100vh"}
+        width={"100vw"}
+        flexDirection={"column"}
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
+        <CircularProgress size={18} color='primary' />
+        <Typography fontSize={14}>Site loading...</Typography>
+      </Stack>
     )
+  }
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Routes>
+        <Route path="/" element={<Usernavigation />} />
+        {/* Catch-all route for handling 404 */}
+        <Route path="/*" element={<Usernavigation />} />
+      </Routes>
+
+      {/**Auto loads */}
+      <Autoalert />
+      <Autoloading />
+    </ThemeProvider>
+  );
 }
+
+
 
 export default App;

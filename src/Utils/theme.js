@@ -1,18 +1,41 @@
 import { createTheme } from "@mui/material";
+import { dimtextcolor, lightprimaryColor, lightsecondaryColor, primaryColor, secondaryColor } from "./colors";
 
+
+// Create theme with validated colors and fallbacks
 const theme = createTheme({
     palette: {
         primary: {
-            main: "#670600"
-        }
+            main: primaryColor,
+        },
+        secondary: {
+            main: secondaryColor,
+        },
+        lightprimary: {
+            main: lightprimaryColor,
+        },
+        lightsecondary: {
+            main: lightsecondaryColor,
+        },
+        dimcolor: {
+            main: dimtextcolor,
+        },
+        whitecolor: {
+            main: '#FFFFFF',
+        },
     },
     typography: {
-        // "fontFamily": `"Roboto", "Helvetica", "Arial", sans-serif`,
-        // "fontSize": 12,
-        // "fontWeightLight": 300,
-        // "fontWeightRegular": 400,
-        // "fontWeightMedium": 500
-    }
-})
+        fontFamily: `lightfont`,
+    },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    textTransform: 'none',
+                },
+            },
+        },
+    },
+});
 
-export default theme
+export default theme;

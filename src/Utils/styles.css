@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'boldfont';
+    src: url('./../assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'italicboldfont';
+    src: url('./../assets/fonts/Pacifico-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'lightfont';
+    src: url('./../assets/fonts/Poppins-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'italiclightfont';
+    src: url('./../assets/fonts/Poppins-LightItalic.ttf') format('truetype');
+}
+
+:root {
+    /* --primarycolor: #900f20; */
+    --primarycolor: #344c36;
+    --lightprimarycolor: #e7d09d;
+    --secondarycolor: #faad1b;
+    --lightsecondarycolor: #3b3333;
+    --lightfont: 'lightfont';
+    --boldfont: 'boldfont';
+    --italiclightfont: 'italiclightfont';
+    --italicboldfont: 'italicboldfont';
+    --dimtextcolor: #959593;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--lightfont);
+    /* margin: auto; */
+}
+
+.mainbody {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.offlinediv {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: #0a2540;
+    color: white;
+    font-size: 12px;
+    padding: 3px 0px;
+    z-index: 10;
+}
+
+.onlinediv {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    padding: 3px 0px;
+    z-index: 10;
+}
+
+
+
+
+.overlaybox {
+    background: linear-gradient(to top, rgb(54, 54, 54) 0%, rgba(0, 0, 0, 0) 50%, rgb(54, 54, 54) 100%);
+}
+
+
+.processingdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.processingdiv div {
+    max-height: 150px;
+}
+
+.processingdiv section {
+    font-size: 20px;
+    font-family: 'sans';
+    text-align: center;
+}
