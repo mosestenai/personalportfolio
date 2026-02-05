@@ -41,7 +41,7 @@ const AboutmeCard = () => {
                         alignItems="center"
                         sx={{ overflow: "hidden" }} // Prevents buttons from overflowing
                     >
-                        <img src={require("./../../assets/images/pic_one.png")} style={{ position: "absolute", bottom: 0, zIndex: 4, maxHeight: "100%" }} />
+                        <img src={require("./../../assets/images/passport_photo.png")} style={{ position: "absolute", bottom: 0, zIndex: 4, maxHeight: "100%" }} />
                         <Stack position={"absolute"} display={{ lg: "block", xs: "none" }} bottom={"5%"} zIndex={5}>
                             <Stack flexDirection={"row"} alignItems={"center"} justifyContent={"center"}>
                                 <Button variant="contained" sx={{ borderRadius: 5, width: 'fit-content' }}>{tags[0]}</Button>

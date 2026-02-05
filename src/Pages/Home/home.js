@@ -86,7 +86,9 @@ const Homepage = ({ current_route }) => {
                         height: { lg: 400, xs: 250 }
                     }}>
                         <img src={require("./../../assets/images/hire_me.png")} style={{ position: "absolute", right: 0, maxHeight: 100, top: 5 }} />
-                        <img src={require("./../../assets/images/pic_one.png")} style={{ maxHeight: "100%" }} />
+                        <Stack width={"100%"} marginBottom={"5%"} height={"95%"} flexDirection={"row"} justifyContent={"center"} alignItems={"center"}>
+                            <img src={require("./../../assets/images/passport__half.png")} style={{ maxHeight: "90%" }} />
+                        </Stack>
                         <Box position={"absolute"} left={0} bottom={0}>
                             <AdsClickOutlined /><br />
                             <Button color="secondary" variant="contained" sx={{ borderRadius: 10, ml: 3 }}>Mobile Developer</Button>

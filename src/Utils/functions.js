@@ -24,12 +24,12 @@ export function setToStore(name, data, encrypt) {
     }
     // Encrypt the data before storing
     const encryptedData = CryptoJS.AES.encrypt(data, process.env.REACT_APP_REDUX_SECRET_KEY).toString();
-    localStorage.setItem(`${SITE_NAME}_${name}`, encrypt ? encryptedData : data);
+    localStorage.setItem(`${SITE_NAME}_PLATFORM_${name}`, encrypt ? encryptedData : data);
 }
 
 // Decrypt and retrieve data from localStorage
 export function getFromStore(name, is_encrypted) {
-    let encryptedData = localStorage.getItem(`${SITE_NAME}_${name}`);
+    let encryptedData = localStorage.getItem(`${SITE_NAME}_PLATFORM_${name}`);
     if (!encryptedData) return null;
 
     try {
@@ -46,7 +46,7 @@ export function getFromStore(name, is_encrypted) {
 
 // Remove data from localStorage
 export function removeFromStore(name) {
-    localStorage.removeItem(`${SITE_NAME}_${name}`);
+    localStorage.removeItem(`${SITE_NAME}_PLATFORM_${name}`);
 }
 
 //Mui tabs scroll
